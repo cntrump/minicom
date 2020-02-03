@@ -146,8 +146,6 @@ static int newtype;
 /* Access to ".dialdir" denied? */
 static int dendd = 0;
 static char *tagged;
-char *dial_user;
-char *dial_pass;
 
 /* Change the baud rate.  Treat all characters in the given array as if
  * they were key presses within the comm parameters dialog (C-A P) and
