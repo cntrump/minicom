@@ -113,9 +113,9 @@ EXTERN char *dial_user;     /* Our username there */
 EXTERN char *dial_pass;     /* Our password */
 
 #ifdef USE_SOCKET
-EXTERN int portfd_is_socket;	/* File descriptor is a unix socket */
-EXTERN int portfd_is_connected;	/* 1 if the socket is connected */
-EXTERN struct sockaddr_un portfd_sock_addr;	/* the unix socket address */
+extern int portfd_is_socket;	/* File descriptor is a unix socket */
+extern int portfd_is_connected;	/* 1 if the socket is connected */
+extern struct sockaddr_un portfd_sock_addr;	/* the unix socket address */
 #define portfd_connected ((portfd_is_socket && !portfd_is_connected) \
                            ? -1 : portfd)
 #else
